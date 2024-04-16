@@ -1,0 +1,115 @@
+/* Estilos básicos para todo o corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Impede overflow fora da viewport */
+}
+
+/* Estilos para o contêiner principal que envolve tudo */
+.container {
+    width: 90%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    max-width: 1400px; /* Ajusta a largura máxima para o contêiner principal */
+    overflow: hidden; /* Impede que qualquer conteúdo interno exceda os limites do contêiner */
+}
+
+/* Estilos para o título */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+/* Estilos para botões */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 15px; /* Ajusta o padding para um botão menor */
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Diminui o tamanho da fonte para um botão menor */
+    width: auto; /* Ajusta a largura para ser apenas o necessário para o texto */
+    display: block;
+    margin-left: auto; /* Centraliza o botão horizontalmente */
+    margin-right: auto; /* Centraliza o botão horizontalmente */
+}
+
+/* Estilo para hover do botão, para feedback visual ao usuário */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para o input de arquivos */
+input[type="file"] {
+    border: 1px solid #ccc;
+    display: block;
+    padding: 6px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Estilos para os contêineres de imagens */
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Alinha as imagens à esquerda */
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden; /* Esconde conteúdo que ultrapassa o contêiner */
+}
+
+/* Estilo para cada contêiner de imagem individual */
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    width: auto;
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+}
+
+/* Estilos para o botão de fechar em cada imagem */
+.close-btn {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff4545;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    z-index: 10;
+}
+
+/* Estilo para imagens dentro do contêiner */
+.image-wrapper img {
+    width: 150px; /* Largura da imagem */
+    height: 150px; /* Altura da imagem */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Classe adicionada para destacar imagem selecionada pelo aluno */
+.selected {
+    border: 3px solid #007BFF;
+    padding: 2px;
+}
